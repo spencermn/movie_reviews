@@ -6,3 +6,7 @@
     <li><%= link_to "Edit", edit_movie_path(@movie) %></li>
     <li><%= link_to "Destroy", movie_path(@movie), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></li>
 </ul>
+
+<div><br>
+    <%= link_to "Return", movies_path %>
+</div>

@@ -1,11 +1,18 @@
 <h1>Movies Page</h1>
 
-<ul>
-    <% @movies.each do |movie| %>
-        <li>
-            <%= link_to movie.title, movie%>
-        </li>
+<table>
+        <tr>
+            <th>Title</th>
+            <th>Director</th>
+        </tr>
+     <% @movies.each do |movie| %>
+        <tr>
+            <td><%= link_to movie.title, movie%></td>
+            <td><%= movie.director %></td>
+        </tr>
     <% end %>
-</ul>
+</table>
 
-<%= link_to "Add Movie", new_movie_path %>
+<div><br>
+    <%= link_to "Add Movie", new_movie_path %>
+</div>
