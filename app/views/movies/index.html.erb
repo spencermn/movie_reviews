@@ -3,7 +3,7 @@
 <ul>
     <% @movies.each do |movie| %>
         <li>
-            <%= movie.title %>
+            <%= link_to movie.title, movie%>
         </li>
     <% end %>
 </ul>
