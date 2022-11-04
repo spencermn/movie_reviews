@@ -4,11 +4,15 @@
         <tr>
             <th>Title</th>
             <th>Director</th>
+            <th>Year</th>
+            <th>No. Reviews</th>
         </tr>
      <% @movies.each do |movie| %>
         <tr>
             <td><%= link_to movie.title, movie%></td>
             <td><%= movie.director %></td>
+            <td><%= movie.year %></td>
+            <td><%= movie.reviews.count %>
         </tr>
     <% end %>
 </table>

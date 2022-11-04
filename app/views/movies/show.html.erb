@@ -1,6 +1,7 @@
 <h1><%= @movie.title %></h1>
 
-<p><%= @movie.director %>
+<p>Directed by: <%= @movie.director %></p>
+<p>Released in: <%= @movie.year %></p>
 
 <ul>
     <li><%= link_to "Edit", edit_movie_path(@movie) %></li>
