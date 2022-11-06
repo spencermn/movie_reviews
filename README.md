@@ -1,24 +1,11 @@
-# README
+# Movie Reviews
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple website built in Rails that allows users to review their favorite movies.
 
-Things you may want to cover:
+Ruby version: 3.1.2
 
-* Ruby version
+To Run: Make sure you have the correct rails + sqlite3 version installed. Then from the project directory run
 
-* System dependencies
+`bin/rails server`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The project should run on port 3000
